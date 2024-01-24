@@ -1,0 +1,19 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.5
+
+data:
+  name: ffhq
+  root: /data/xutd/dataset/FFHQ/val_256x256
+
+measurement:
+  operator:
+    name: diffjpeg
+    height: 256
+    width: 256
+
+
+  noise:
+    name: gaussian
+    sigma: 0.05
